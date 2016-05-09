@@ -46,6 +46,7 @@ function getComputerMove(move) {
     else if (move === null || move === ' ')
 	{
 		move = randomPlay();
+	}
 	// However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
     return move;
 }
@@ -54,18 +55,18 @@ function getWinner(playerMove,computerMove) {
     var winner;
 	if (playerMove === 'rock' && computerMove === 'scissors') {
 		winner = 'player';
-	} else if (playerMove === 'rock' && computerMove = 'paper') {
+	} else if (playerMove === 'rock' && computerMove === 'paper') {
 		winner = 'computer';
-	} else if (playerMove === 'paper' && computerMove = 'scissors') {
+	} else if (playerMove === 'paper' && computerMove === 'scissors') {
 		winner = 'computer';
-	} else if (playerMove === 'paper' && computerMove = 'rock') {
+	} else if (playerMove === 'paper' && computerMove === 'rock') {
 		winner = 'computer';
-	} else if (playerMove === 'scissors' && computerMove = 'paper') {
+	} else if (playerMove === 'scissors' && computerMove === 'paper') {
 		winner = 'computer';
-	} else if (playerMove === 'scissors' && computerMove = 'rock') {
+	} else if (playerMove === 'scissors' && computerMove === 'rock') {
 		winner = 'computer';
 	} else {
-		winner = 'tie';
+		winner === 'tie';
 	}
     // Write code that will set winner to either 'player', 'computer', or 'tie' based on the values of playerMove and computerMove.
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
